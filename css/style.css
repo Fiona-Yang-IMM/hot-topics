@@ -1,0 +1,276 @@
+/*
+Author: Fiona Yang 
+1526-Loaded Content by AJAX
+2020-08-03
+*/
+
+/*
+Font:
+title font-family: 'Lora', serif;
+content font-family: 'Source Sans Pro', sans-serif;
+
+Color scheme:
+Dark blue grey: #38444d
+Orange:#f18c1f
+Light blue grey: #4f6579
+Light blue:#92c2ea
+*/
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+h1,h2,h3 {
+    font-family:'Lora', Times, serif;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #4f6579;
+}
+
+p {
+    color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    background-color: #fff;  
+    letter-spacing:0.2px;
+}
+
+body {
+    margin: auto;
+}
+
+header {
+    background-color: #38444d;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #a3c0d1;
+}
+
+.logo {
+    color: #f18c1f;
+}
+
+figcaption {
+    color: #6f7a85;
+}
+    
+/*---home page---*/ 
+.box {
+    padding: 1.8rem 0;    
+    border-bottom: solid 1px #ccc;
+}
+
+.masthead {
+    background-color: antiquewhite;
+    background-image: url(../img/hero-img.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin: auto;
+    text-align: right;
+}
+
+.masthead h1 {
+    margin: 0 10rem;
+    padding:8rem 0;
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    max-width: 70rem;
+    padding: 1rem 1.8rem;
+}
+
+.container p{
+    text-align: left;
+}
+
+/*portfolio page*/
+.thumbnail-t {
+    border-bottom: solid 1px #ccc;
+}
+
+.thumbnail-t figure{
+    padding-bottom: 2rem;
+}
+
+/*footer styles*/
+footer {
+    width: 100%;
+	color: #333;
+    text-align: center;
+    background-color: #fff;
+}
+
+footer a {
+    margin: 1rem;
+    font-size: 0.8rem;
+    color: #92c2ea;
+}
+
+footer p {
+    margin: 0 0 1rem;
+}
+
+footer div:last-child {
+    background-color: #333;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.l-font {
+    color: #eee;
+}
+
+/* This is for Responsive effect */
+/*----------MEDIA QUERIES-----------*/
+/*Mobile View */
+@media only screen and (max-width: 35rem) {
+    html {
+        font-size: 0.75rem; 
+        line-height: 1.4rem;
+    }
+    
+    .navbar {
+        padding-top: 2rem;
+    }
+    
+    .navbar li {
+        padding: 1rem;
+        border-top: solid 1px #5d676e;
+        width: 60%;
+        margin: auto;
+    }
+    
+    .masthead h1 {
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/*Tablet View */
+@media only screen and (max-width: 80rem) and (min-width: 35rem) {
+    html {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar ul {
+        display: inline-flex;
+    }
+    
+    .masthead h1 {
+        margin: auto;
+        padding:6rem 1rem;
+    }
+    
+    /*---home page---*/ 
+    .content-01 {
+        width: 40%;
+        float: left;
+        margin: 0;
+        padding-right: 2rem;
+    }
+
+    /*---portfolio page---*/
+    .thumbnail-t {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin: 0;
+        justify-content: space-evenly;
+    }
+    
+    .thumbnail-t figure {
+        margin: 0; 
+        width: 45%;
+    }
+}
+    
+/*Desktop View */
+@media only screen and (min-width: 80rem) {
+    html {
+        font-size: 1.25rem; 
+        line-height: 1.6rem;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    .navbar ul {
+        display: inline-flex;
+    }
+
+    .logo {
+        padding-left: 6rem;
+}
+    
+    /*---home page---*/
+    .box {
+        display: flex;
+        margin: auto;
+    }
+    
+    .box p {
+        width: 60%;
+    }
+    
+    .content-01 {
+        width: 40%;
+        margin: 0;
+        padding-right: 2rem;
+    }
+    
+    /*---portfolio page---*/
+    .thumbnail-t {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin: auto;
+    }
+    
+    .thumbnail-t img {
+        width: 300px;
+        height: auto;
+    }
+}
