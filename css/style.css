@@ -206,6 +206,10 @@ footer div:last-child {
     }
     
     /*---home page---*/ 
+    .home-h2 {
+        text-align: left;
+    }
+    
     .content-01 {
         width: 40%;
         float: left;
@@ -248,6 +252,10 @@ footer div:last-child {
 }
     
     /*---home page---*/
+    .home-h2 {
+        text-align: left;
+    }
+    
     .box {
         display: flex;
         margin: auto;
